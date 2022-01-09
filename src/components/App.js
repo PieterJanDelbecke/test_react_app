@@ -1,20 +1,26 @@
 import React from 'react'
-import Nav from './Nav'
-import Main from './Main'
-import Comment from './comments'
 
+const users = [
+  {
+    email: "h@gmail.com",
+    password: 'password'
+  },
+  {
+    email: "ed@gmail.com",
+    password: "123456"
+  }
+]
 
-
-const App = () => {
-  return (
-   <div>
-     <Nav />
-     <Main />
-     <Comment author="Mary Smith"/>
-     <Comment author="Tony Armstrong"/>
-     <Comment author="Julian Slater"/>
-   </div> 
-  );
+class App extends React.Component {
+  render(){
+    console.log(users)
+    return(
+      <div className='container'>
+        <h2>Login</h2>
+      </div>
+    )
+  }
 }
+
 
 export default App;
